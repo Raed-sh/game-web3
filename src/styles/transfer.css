@@ -1,0 +1,169 @@
+#transfer-asset-background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    top: 0; 
+    left: 0; 
+    background: rgba(3, 2, 2, 0.3);
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#transfer-asset {
+    width: 720px;
+    height: 520px;
+
+    background: #030406;
+    border: 1px solid #231F1F;
+    box-shadow: 0px 4px 50px #000000;
+    border-radius: 8px;
+}
+
+.transfer-input {
+    width: 360px;
+    height: 43px;
+
+    background: linear-gradient(180deg, #101116 0%, #111111 100%);
+    border: 1px solid #5B5B5B;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+
+    color: #EDDBAC;
+    padding-right: 2rem;
+    padding-left: 0.5rem;
+}
+
+.transfer-input-wrapper label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+
+    color: #919191;
+    padding-bottom: 2px;
+}
+
+.copy-wallet {
+    height: 12px;
+    width: 12px;
+    position: relative;
+    z-index: 101;
+    left: 94%;
+    top: -1.8rem;
+    cursor: pointer;
+}
+
+.send-and-warning {
+    display: flex;
+    flex-direction: row;
+    width: 88%;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.send-and-warning h2 {
+    line-height: 42px !important;
+}
+
+#transfer-warning {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+}
+
+#transfer-warning img {
+    height: 15px;
+    width: 15px;
+    position: relative;
+    top: 10px;
+}
+
+#transfer-warning b {
+    color: #EDDBAC !important;
+}
+
+#transfer-warning p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.04em;
+    color: #919191;
+}
+
+#right-card-placeholder {
+    width: 200px;
+    height: 300px;
+}
+
+.collection-sui-logo {
+    position: absolute;
+    z-index: 101;
+    height: 20px;
+    width: 15px;
+    top: .7rem;
+    right: .8rem;
+}
+
+#transfer-asset #partners-main-text {
+    position: relative;
+    top: -20px;
+    align-items: start !important;
+}
+
+#partners-disclaimer {
+    width: 380px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    /* identical to box height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 0.04em;
+
+    color: #EDDBAC;
+    position: relative;
+    top: -34px;
+}
+
+#partners-disclaimer b {
+    height: 12px;
+}
+
+#transfer-error-message {
+    margin-bottom: 1rem;
+    color: #9E170E !important
+}
+
+#transfer-asset .partner-stage {
+    margin: 69px 20px !important;
+}

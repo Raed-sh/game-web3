@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+@font-face {
+  font-family: "Medusa Gothic";
+  src: url("/fonts/MedusaGothicD.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Trajan Pro";
+  src: url("/fonts/TrajanPro.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+}
+
+.font-medusa {
+  font-family: "Medusa Gothic";
+}

@@ -1,0 +1,155 @@
+.collected-ethernal-wrapper {
+  height: 300px;
+  width: 300px;
+  border: 1px solid #cdcdcd;
+}
+
+.collected-ethernal-wrapper video {
+  height: 298px;
+  width: 300px;
+}
+
+.collected-ethernal-hover-hidden {
+  display: none !important;
+}
+
+.collected-ethernal-hover {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 300px;
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -299px;
+  left: -1px;
+  align-items: center;
+
+  background: linear-gradient(180deg, rgba(17, 23, 34, 0.7) 0%, rgba(3, 2, 2, 0.7) 33.15%);
+  backdrop-filter: blur(5px);
+}
+
+.collected-ethernal-name {
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 250, 202, 0.85) 0%,
+    rgba(255, 243, 137, 0.85) 21.35%,
+    rgba(255, 218, 130, 0.85) 67.19%,
+    rgba(255, 160, 114, 0.85) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+  margin-top: 80px;
+}
+
+.collected-ethernal-type {
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+
+  color: #ffffff;
+
+  text-shadow: 0px 0px 4px #000000;
+  margin-top: 20px;
+}
+
+.collected-ethernal-description {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #b1b1b1;
+}
+
+.collected-ethernal-rarity {
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 250, 202, 0.85) 0%,
+    rgba(255, 243, 137, 0.85) 21.35%,
+    rgba(255, 218, 130, 0.85) 67.19%,
+    rgba(255, 160, 114, 0.85) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  position: relative;
+  top: 80px;
+}
+
+/* ethernal counts */
+.ethernal-count-wrapper {
+  position: relative;
+  top: -290px;
+  width: 290px !important;
+  left: 6px;
+  height: 0px;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 25;
+}
+
+.ethernal-count img {
+  width: 40px;
+  max-width: 40px !important;
+  height: 24px;
+  max-height: 24px !important;
+  display: flex;
+}
+
+.ethernal-count p {
+  position: relative;
+  top: -1.5rem;
+  width: 40px;
+  height: 24px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  vertical-align: middle;
+
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+
+  color: rgba(237, 219, 172, 0.85);
+}

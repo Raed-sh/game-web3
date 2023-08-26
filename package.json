@@ -1,0 +1,43 @@
+{
+  "name": "store",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "npm run build && next export -o _static",
+    "serve": "next start -H 0.0.0.0 -p ${PORT:-8080}"
+  },
+  "dependencies": {
+    "@mysten/sui.js": "^0.34.1",
+    "@next/font": "13.1.6",
+    "@stripe/react-stripe-js": "2.1.0",
+    "@stripe/stripe-js": "^1.46.0",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/node": "18.13.0",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "@web3modal/ethereum": "^2.4.5",
+    "@web3modal/react": "^2.4.5",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.1.6",
+    "framer-motion": "^9.0.4",
+    "jsonwebtoken": "^9.0.0",
+    "next": "13.1.6",
+    "next-videos": "^1.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sharp": "^0.31.3",
+    "stripe": "^11.11.0",
+    "typescript": "5.0.4",
+    "viem": "^1.0.2",
+    "wagmi": "^1.1.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
+  }
+}

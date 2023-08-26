@@ -1,0 +1,85 @@
+.store-head {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: absolute;
+  width: 100%;
+  z-index: 4;
+
+}
+
+.store-head button {
+  width: 40px;
+  height: 40px;
+  background-image: url(/images/icons/Back_button.png);
+  background-position: center;
+  background-color: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+
+  display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
+  position: relative;
+  z-index: 51;
+}
+
+.store-head button:hover {
+  background-image: url(/images/icons/Back_button-hover.png);
+}
+
+.store-head button:active {
+  background-image: url(/images/icons/Back_button-pressed.png);
+}
+
+.store-head div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.store-head h4 {
+  width: 159px;
+  height: 42px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 2em;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  color: #b1b1b1;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.store-head button h5 {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+    padding-bottom: 0.05rem;
+    color: #fee190;
+
+
+  text-shadow: 0px 1px 13px rgba(255, 127, 9, 0.64);
+
+  text-shadow: 0px 1px 13px rgba(255, 127, 9, 0.64);
+}
+
+.header-button {
+  padding-left: 12px;
+}
+p.header-button {
+  position: relative;
+  left: 12px;
+}
+/* .store-head button:nth-child(2) h5{
+  color: #ff83be;
+} */

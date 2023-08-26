@@ -1,0 +1,338 @@
+.store-bg {
+  width: 100%;
+  /* min-height: 100vh; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blur-bg {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  height: 670px;
+  background: linear-gradient(180deg, rgba(17, 23, 34, 0.9) 0%, rgba(3, 2, 2, 0.9) 33.15%);
+  backdrop-filter: blur(15px);
+  display: none;
+}
+
+.market-wrapper {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+/* ------- */
+
+.currency-title {
+  font-family: "Medusa Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #bab3bb;
+  text-shadow: 0px 0px 4px #000000;
+}
+
+.market-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 4em;
+}
+
+.market-container h1 {
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  font-variant: small-caps;
+
+  color: #eddbac;
+
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.market-container ol {
+  display: flex;
+  width: 85%;
+  padding: 0;
+  /* gap: 25px; */
+  list-style: none;
+}
+
+.market-container ol a {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 24px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  color: #b1b1b1;
+  text-transform: capitalize;
+  position: relative;
+  cursor: default;
+  text-decoration: none;
+}
+
+.market-container ol a::before {
+  content: ">";
+  margin: 0 0.7em;
+}
+
+.market-container ol a:nth-child(1)::before {
+  content: "";
+}
+
+.market-container ol a:hover,
+.market-container ol .step-act {
+  color: #fee190;
+  text-shadow: 0px 1px 13px rgba(255, 127, 9, 0.64);
+}
+
+.store-h {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+
+.store-h h3 {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0.08em;
+  color: #fee190;
+  text-shadow: 0px 1px 13px rgba(255, 127, 9, 0.64);
+  display: flex;
+  align-items: center;
+}
+
+/* ------------- */
+
+/* START SCREEN */
+
+.start-screen {
+  display: flex;
+  gap: 25px;
+}
+
+.start-screen section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.start-screen h2 {
+  font-family: "Medusa Gothic";
+  font-weight: 400;
+  font-size: 24px;
+  background: linear-gradient(180deg, #f6eac4 23.96%, #ffffff 38.02%, #ffffff 47.4%, #ccb18c 94.27%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  white-space: pre-wrap;
+  margin: 0;
+  transform: translateY(2rem);
+}
+
+.start-screen div {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5%;
+  cursor: pointer;
+  border: 1.48989px solid transparent;
+  border-radius: 5.95955px;
+  transition: all 300ms ease;
+}
+
+/* .start-screen div:hover{
+  border-color:#CFC2AC;
+} */
+
+.curr-h {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.curr-h h2 {
+  display: flex;
+  align-items: center;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 32px;
+  color: #b1b1b1;
+  position: relative;
+}
+
+.curr-h img {
+  position: absolute;
+  left: 0;
+  top: -10%;
+}
+
+.curr-h h2 span {
+  color: #fee190;
+  margin-left: 2rem;
+  text-shadow: 0px 1px 13px rgba(255, 127, 9, 0.64);
+  margin-right: 2rem;
+}
+
+/* CURRENCY-STORE */
+.currency-store {
+  width: 100%;
+  /* height: 600px; */
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.p-methods {
+  width: 307px;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url(/images/backgrounds/town-grey.png) center;
+  gap: 50px;
+}
+
+.p-methods h3 {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #d9d9d9;
+  text-align: start;
+}
+
+.p-methods h4 {
+  font-family: "Medusa Gothic";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  background: linear-gradient(180deg, #f6eac4 23.96%, #ffffff 38.02%, #ffffff 47.4%, #ccb18c 94.27%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  white-space: pre-wrap;
+}
+
+.p-methods ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.p-methods ul li img {
+  width: 180px;
+  height: 49.09px;
+}
+
+.p-methods ul li:hover,
+.checked {
+  border: 1px solid #fee190;
+  box-shadow: 0px 0px 10.6364px rgba(255, 127, 9, 0.69);
+  cursor: pointer;
+}
+
+.walletConnect:hover {
+  border: 1px solid #fee190;
+  box-shadow: 0px 0px 10.6364px rgba(255, 127, 9, 0.69);
+  cursor: pointer;
+}
+
+.wconnectIcon:hover {
+  border: 0px !important;
+}
+
+.currency-store section {
+  width: 100%;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 0fr));
+  position: relative;
+  gap: 25px 0;
+}
+
+.currency-store section h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.currency-store button span {
+  font-family: "Trajan Pro";
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 250, 202, 0.85) 0%,
+    rgba(255, 243, 137, 0.85) 21.35%,
+    rgba(255, 218, 130, 0.85) 67.19%,
+    rgba(255, 160, 114, 0.85) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.crystal-info h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  color: #bab3bb;
+}
+
+.crystal-info h3 span {
+  font-weight: 700;
+}
+
+.crystals h2 {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #fee190;
+  text-shadow: 0px 1px 13px rgba(255, 127, 9, 0.64);
+}
+
+/* BUY CRYSTAL */
+.buy-crystal {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.disabled-link {
+  filter: saturate(0);
+  cursor: not-allowed !important;
+}

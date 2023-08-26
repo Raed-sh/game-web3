@@ -1,0 +1,309 @@
+#currency-store-wrapper {
+    width: 100%;
+    background-image: url('../../public/images/new-store/Store-main-bg-4k.webp');
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.store-bundle {
+    height: 480px;
+    max-height: 482px;
+    width: 200px;
+    max-width: 202px;
+    cursor: pointer;
+}
+
+.store-bundle-hover {
+    /* TODO: get proper shadow from Olha */
+    /* box-shadow: 2px linear-gradient(180deg, rgba(50, 50, 50, 0.5) 0%, #323232 100%); */
+    /* mix-blend-mode: normal; */
+    /* border: 1px solid #EDDBAC; */
+}
+
+.store-bundle-details .amount-box {
+    position: relative;
+    top: -160px;
+}
+
+.amount-box h4 {
+    position: relative;
+    left: 40%;
+    top: -65px;
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 21px;
+
+    /* or 88% */
+    font-variant: small-caps;
+
+    color: #EDDBAC;
+}
+
+.amount-box .amount-icon {
+    position: relative;
+    top: -100px;
+    left: 24px;
+}
+
+.store-bundle-details .store-bundle-price {
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 21px;
+
+    /* or 66% */
+    text-align: center;
+    font-variant: small-caps;
+
+    color: #EDDBAC;
+    position: relative;
+    top: -210px;
+}
+
+#currency-store-purchase {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+
+#currency-store-details {
+    width: 323px;
+    height: 517px;
+}
+
+#currency-store-details .amount-box h4 {
+    left: 46%;
+    top: -62px;
+}
+
+.balance-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 320px;
+    padding-bottom: 12px;
+}
+
+#purchase-amount-container {
+    width: 323px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -80px;
+}
+
+#purchase-balance {
+    position: relative;
+    top: -120px;
+}
+
+#purchase-balance h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+
+    letter-spacing: 0.08em;
+
+    color: #D9D9D9;
+}
+
+#purchase-balance span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.08em;
+
+    color: #D9D9D9;
+}
+
+.purchase-new-balance h3,
+.purchase-new-balance span {
+    color: #EDDBAC !important;
+}
+
+.payment-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-modal form,
+#payment-element,
+.__PrivateStripeElement {
+    width: 500px;
+}
+
+.payment-modal section {
+    width: 500px !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-solid {
+    width: 230px;
+    height: 54px;
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    align-items: center;
+
+    color: #BAB3BB;
+    background-image: url('../../public/images/new-store/CheckoutButton/button-solid.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.button-solid:hover {
+    background-image: url('../../public/images/new-store/CheckoutButton/button-solid-hover.webp');
+}
+
+.button-solid:active {
+    background-image: url('../../public/images/new-store/CheckoutButton/button-solid-pressed.webp');
+}
+
+#purchase-success {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+#back-to-currency-store {
+    cursor: pointer;
+    height: 620px;
+    width: 320px;
+    background-image: url('../../public/images/new-store/Success/CS-banner.webp');
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+#back-to-currency-store h3 {
+    width: 120px;
+    margin-top: 3rem;
+
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #EDDBAC;
+
+    text-shadow: 0px 1px 13px rgba(255, 127, 9, 0.64);
+}
+
+#back-to-currency-store:hover {
+    background-image: url('../../public/images/new-store/Success/CS-banner-hover.webp');
+}
+
+#back-to-currency-store:active {
+    background-image: url('../../public/images/new-store/Success/CS-banner-pressed.webp');
+}
+
+#result-display {
+    height: 620px;
+    width: 720px;
+    background-image: url(/images/backgrounds/town.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#result-display h2 {
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    text-align: center;
+
+    color: #EDDBAC;
+
+    text-shadow: 0px 1px 13px rgba(255, 127, 9, 0.64);
+}
+
+#result-display h3 {
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+
+    color: #EDDBAC;
+
+    text-shadow: 0px 1px 13px rgba(255, 127, 9, 0.64);
+}
+
+#result-coin {
+    height: 160px;
+    width: 160px;
+    margin-top: 50px;
+}
+
+#new-balance {
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    position: relative;
+    top: 8px;
+}
+
+#result-sign {
+    position: relative;
+    top: 12px;
+}
+
+#new-balance img {
+    position: relative;
+    top: -2px;
+    height: 35px;
+    width: 35px;
+    margin-left: 1rem;
+}
+
+#separator {
+    width: 400px;
+    height: 1px;
+
+    background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.polygon-icon {
+    height: 30px;
+    margin-top: -215px;
+    padding-left: 10px;
+}
+
+.bundle-price-container {
+    display: flex;
+    justify-content: center;
+}

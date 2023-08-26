@@ -1,0 +1,828 @@
+.collection-cont {
+  /* position: absolute; */
+  /* left: 0; */
+  /* bottom: 0; */
+  z-index: 2;
+  /* width: 1905px; */
+  width: 100%;
+  position: relative;
+  /* left:px; */
+  top: 50px;
+  /* margin-left: -1rem; */
+  /* padding-right: -1rem; */
+
+  /* height: 570px; */
+  /* max-height: 70%; */
+  /* background: linear-gradient(
+    180deg,
+    rgba(17, 23, 34, 0.9) 0%,
+    rgba(3, 2, 2, 0.9) 33.15%
+  ); */
+  display: flex;
+  justify-content:center;
+}
+
+.collection-wrapper {
+  width: 100% !important;
+  height: 84.5%;
+}
+
+.collection-container{
+  /* width: 1904px; */
+  /* width: 100%; */
+  /* max-width: 100%; */
+  position: relative;
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.collection-container h1 {
+  font-family: "Medusa Gothic";
+  font-size: 46px;
+  background: linear-gradient(
+    180deg,
+    #f6eac4 23.96%,
+    #ffffff 38.02%,
+    #ffffff 47.4%,
+    #ccb18c 94.27%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  margin: 0;
+}
+
+.left-banner {
+  height: 560px;
+  width: 230px;
+  background: url(/images/collection/menu/my-collection-menu-bg.webp) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-top: 5rem;
+  transform: translateY(-1.5rem);
+  top: 100px;
+  position: relative;
+}
+
+.collection-pack-selector {
+  width: 230px;
+  height: 65px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+
+  font-family: 'Trajan Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 65px;
+  text-align: left;
+  padding-left: 45px;
+  font-variant: small-caps;
+  
+  color: #8A8A8A;
+  text-shadow: none;
+}
+
+.collection-pack-selector-active {
+  font-family: 'Trajan Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 65px;
+  text-align: left;
+
+  color: rgba(255, 250, 202, 0.85) !important;
+  
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5) !important;
+}
+
+#collected-menu-list {
+  position: relative;
+  z-index: 2;
+  height: 760px;
+  width: 230px;
+}
+
+#collected-menu-list h3 {
+  font-family: 'Trajan Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  color: #EDDBAC;
+  padding-bottom: 1rem;
+}
+
+.left-banner label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(/images/backgrounds/Booster-packs-menu-select.png);
+  width: 280px;
+  height: 80px;
+  padding-right: 4rem;
+}
+.left-banner label span {
+  font-family: 'Medusa Gothic';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+
+  background: linear-gradient(180deg, #F6EAC4 23.96%, #FFFFFF 38.02%, #FFFFFF 47.4%, #CCB18C 94.27%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.left-banner h3{
+  font-family: 'Medusa Gothic';
+  font-weight: 400;
+  font-size: 18px;
+  background: linear-gradient(180deg, #F6EAC4 23.96%, #FFFFFF 38.02%, #FFFFFF 47.4%, #CCB18C 94.27%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.left-banner h5 {
+  font-family: 'Trajan Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  color: #EDDBAC;
+}
+
+#collection-packs {
+  width: 1150px;
+  max-height: 700px;
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+
+#collection-fp-list {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: flex-start;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+#collection-bp-list {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: flex-start;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.collection-fp-display-wrapper {
+  height: 297px;
+  width: 200px;
+}
+
+.collection-fp-display {
+  height: 297px;
+  width: 200px;
+  background-size: cover;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.collection-bp-display {
+  height: 298px;
+  width: 200.39px;
+  background-size: cover;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.collection-fp-display h2, .collection-bp-display h2 {
+  font-family: 'Trajan Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #EDDBAC;
+  padding-bottom: 47px;
+}
+
+.collection-bp-display h2 {
+  padding-bottom: 35px;
+}
+
+.count-display {
+  width: 40px;
+  height: 24px;
+  font-family: 'Trajan Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px !important;
+  text-align: center;
+
+  color: rgba(237, 219, 172, 0.85);
+  position: relative;
+  top: 10px;
+  left: 8px;
+}
+
+.collection-cont ul {
+  max-height: 700px;
+  list-style: none;
+  padding: 1rem 0rem 1rem 1rem;
+  width: 1150px;
+  max-width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-color: #fbc974 rgba(217, 217, 217, 0.07);
+  margin-left: 2rem;
+}
+.collection-cont ul li {
+  height: 340px;
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid transparent;
+}
+.coll-bg{
+  transition: all 300ms ease;
+}
+
+.collection-cont ul li:hover .coll-bg {
+  /* background: rgba(0, 0, 0, 0.7); */
+  /* border-image: linear-gradient(
+      90.08deg,
+      #fee190 0.11%,
+      rgba(255, 255, 255, 0) 77.16%
+    )
+    1; */
+    filter: drop-shadow(0px 0px 10px rgba(255, 127, 9, 0.64));
+}
+
+.collection-cont ul li div {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid;
+  border-image: linear-gradient(180deg, #cfc2ac 0%, rgba(207, 194, 172, 0) 100%)
+    1; */
+}
+.collection-cont ul li:hover div {
+  /* border: 1px solid #cfc2ac; */
+}
+.collection-cont ul li section {
+  margin: 0 auto;
+}
+
+.collection-cont ul li section h5 {
+  width: 50px;
+  height: 50px;
+  font-family: "Trajan Pro";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 250, 202, 0.85) 0%,
+    rgba(255, 243, 137, 0.85) 21.35%,
+    rgba(255, 218, 130, 0.85) 67.19%,
+    rgba(255, 160, 114, 0.85) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border: 1px solid #676767;
+  border-radius: 4px;
+  filter: saturate(0);
+  opacity: 0.7;
+  transition: all 300ms ease;
+
+}
+.collection-cont ul li section h3 {
+  font-family: "Medusa Gothic";
+  font-weight: 400;
+  font-size: 18px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 250, 202, 0.85) 0%,
+    rgba(255, 243, 137, 0.85) 21.35%,
+    rgba(255, 218, 130, 0.85) 67.19%,
+    rgba(255, 160, 114, 0.85) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  white-space: pre-wrap;
+  filter: saturate(0);
+  opacity: 0.7;
+  margin: 1rem 0;
+  transition: all 300ms ease;
+
+
+}
+.collection-cont ul li section h4 {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  color: #fee190;
+  text-shadow: 0px 1px 13px rgba(255, 127, 9, 0.64);
+  filter: saturate(0);
+  opacity: 0.4;
+  text-shadow: none;
+  transition: all 300ms ease;
+
+}
+.collection-cont ul li:hover section > * {
+  opacity: 1;
+  filter: saturate(1);
+}
+
+/* ----- POWER CARD --------------- */
+.power-wrapper {
+  /* position: absolute; */
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.power-view {
+  /* position: relative; */
+  width: 60%;
+  /* transform: translateY(-3rem); */
+}
+.power-card-r {
+  height: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.power-card {
+  width: 906.86px;
+  height: 230px;
+  padding-left: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.power-card .pack {
+  height: 280px;
+  width: 144.44px;
+  position: relative;
+  left: -86.41px;
+}
+
+#power-pack-description {
+  height: 100%;
+  position: relative;
+  left: -76px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#power-pack-description h2 {
+  font-family: 'Trajan Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  font-variant: small-caps;
+
+  color: #EDDBAC;
+
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+#power-pack-description h4 {
+  font-family: 'Trajan Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #EDDBAC;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}
+
+.power-view ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+.power-view ul li{
+  position: relative;
+  width: 200px;
+  height: 300px;
+  list-style: none;
+}
+
+.power-view ul li img, .power-view ul li video, .card-img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease;
+
+}
+.power-view ul li img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.power-view ul li .act{
+  filter: drop-shadow(0px 4px 40px rgba(255, 127, 9, 0.64));
+}
+
+/* ------------------------------- */
+/* WARNING MODAL */
+
+.w-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  height: 301.12px;
+  z-index: 3;
+  background: url(/images/backgrounds/modal_bg.png) no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  padding: 1rem;
+}
+.w-modal section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.w-modal section img {
+  cursor: pointer;
+}
+
+.w-modal div {
+  height: 100%;
+  width: 100%;
+}
+.w-modal h2 {
+  font-family: "Medusa Gothic";
+  font-weight: 400;
+  font-size: 18px;
+  background: linear-gradient(
+    180deg,
+    #f6eac4 23.96%,
+    #ffffff 38.02%,
+    #ffffff 47.4%,
+    #ccb18c 94.27%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+.w-modal p{
+font-family: 'Roboto';
+font-weight: 400;
+font-size: 18px;
+letter-spacing: 0.04em;
+color: #8A8A8A;
+text-align: center;
+}
+
+/* PACK FILTERS */
+#collection-pack-filters {
+  display: flex;
+  width: 25%;
+  max-height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7px;
+}
+
+.pack-filter {
+  width: 272px;
+  height: 57px;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 25%;
+  padding-right: 6%;
+}
+
+.pack-filter-disabled {
+  cursor: not-allowed;
+}
+
+.pack-filter-text {
+  font-family: 'Trajan Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #656464;
+}
+
+.pack-filter-text-active {
+  font-family: 'Trajan Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  
+  color: #EDDBAC;
+}
+
+.pack-filter-text-amount {
+  font-family: 'Trajan Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  
+  color: #D9D9D9;
+}
+
+.pack-filter-text-amount-active {
+  font-family: 'Trajan Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  background: linear-gradient(180deg, rgba(255, 250, 202, 0.85) 0%, rgba(255, 243, 137, 0.85) 21.35%, rgba(255, 218, 130, 0.85) 67.19%, rgba(255, 160, 114, 0.85) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.cardback-collection {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-height: 600px;
+  overflow-y: auto;
+  width: 700px;
+}
+
+.collection-cardback {
+  position: relative;
+}
+
+.cardback-nft-icon {
+  left: 8px !important;
+  top: 24px !important;
+}
+
+.ethernal-nft-icon {
+  left: 0 !important;
+  top: 0 !important;
+}
+
+.collection-cardback .count-display {
+  position: relative;
+  top: 34px;
+  left: 16px;
+}
+
+#hovered-cardback {
+  height: 298px;
+  width: 200px;
+  position: absolute;
+  top: 22px;
+  z-index: 55;
+  background: linear-gradient(180deg, rgba(17, 23, 34, 0.7) 0%, rgba(3, 2, 2, 0.7) 33.15%);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hovered-cardback h2 {
+  font-family: 'Trajan Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  
+  background: linear-gradient(180deg, rgba(255, 250, 202, 0.85) 0%, rgba(255, 243, 137, 0.85) 21.35%, rgba(255, 218, 130, 0.85) 67.19%, rgba(255, 160, 114, 0.85) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+#hovered-cardback h3 {
+  font-family: 'Trajan Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+
+  /* identical to box height */
+  text-align: center;
+
+  color: #FFFFFF;
+
+  text-shadow: 0px 0px 4px #000000;
+  margin-bottom: 8rem;
+}
+
+.coming-soon {
+  height: 40px;
+  width: 122px;
+  position: relative;
+  left: -6px;
+}
+
+.coming-soon p {
+  font-family: 'Trajan Pro' !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px !important;
+  line-height: 38px !important;
+  text-align: center;
+
+  color: #EDDBAC !important;
+
+  position: relative;
+  left: 15px;
+}
+
+#coming-soon-timer {
+  position: absolute;
+  top: 270px;
+  width: 200px;
+}
+
+#coming-soon-timer-large h2 {
+
+    font-family: 'Trajan Pro' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+
+    color: #EDDBAC !important;
+    margin-top: 12px;
+
+}
+
+#coming-soon-timer-large h3 {
+    font-family: 'Trajan Pro' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+
+    color: #EDDBAC !important;
+}
+
+/* EMOTE STUFF */
+.collection-emote {
+  height: 300px;
+  width: 200px;
+  background: linear-gradient(180deg, rgba(17, 23, 34, 0.7) 0%, rgba(3, 2, 2, 0.7) 33.15%);
+  backdrop-filter: blur(5px);
+}
+
+.emote-display {
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding-top: 1.5rem;
+}
+
+.emote-display h2 {
+  height: 34px;
+  font-family: 'Trajan Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  
+  background: linear-gradient(180deg, rgba(255, 250, 202, 0.85) 0%, rgba(255, 243, 137, 0.85) 21.35%, rgba(255, 218, 130, 0.85) 67.19%, rgba(255, 160, 114, 0.85) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-top: -12px;
+}
+
+.emote-display h3 {
+  font-family: 'Trajan Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(255, 250, 202, 0.85) 0%, rgba(255, 243, 137, 0.85) 21.35%, rgba(255, 218, 130, 0.85) 67.19%, rgba(255, 160, 114, 0.85) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-top: 12px;
+}
+
+.emote-hover {
+  height: 284px;
+  width: 200px;
+  position: relative;
+  top: -300px;
+  background: linear-gradient(180deg, rgba(17, 23, 34, 0.2) 0%, rgba(3, 2, 2, 0.2) 33.15%);
+  backdrop-filter: blur(5px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -280px;
+}
+
+.transfer-button {
+  width: 140px;
+  height: 42px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.transfer-button h2 {
+  font-family: 'Trajan Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 42px;
+  text-align: center;
+
+  color: #EDDBAC;
+}
+
+.adventurer-nft-icon {
+  left: 300px !important;
+}

@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer components {
+  /* .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  } */
+  .text-glow-amber {
+    text-shadow: 0 0 5px #fbc94acb;
+  }
+  .text-glow-red {
+    text-shadow: 0 0 5px #d65a5a;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    color: white;
+    background: black;
+  }
+}

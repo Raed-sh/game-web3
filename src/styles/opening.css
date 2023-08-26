@@ -1,0 +1,166 @@
+.ethernal-wrapper {
+    position: absolute;
+    width: 100vw !important;
+    height: 724px;
+    bottom: 0;
+    background: linear-gradient(180deg, #111722 0%, #030202 33.15%);
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.ethernals-h {
+    width: 100%;
+    max-height: 450px;
+    position: relative;
+}
+
+.ethernals-h section {
+    width: 80%;
+    height: 350px;
+    transform: translateY(-30px);
+    margin: 0 auto;
+}
+
+.ethernals-h section img {
+    position: absolute;
+    right: 10%;
+    top: -15%;
+    width: 250px;
+    height: 450px;
+}
+
+.ethernals-h .eth-h-cont {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    gap: 25px;
+    transform: translate(200px, 100px);
+}
+
+.ethernals-h h2 {
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    font-variant: small-caps;
+    background: linear-gradient(180deg, rgba(255, 250, 202, 0.85) 0%, rgba(255, 243, 137, 0.85) 21.35%, rgba(255, 218, 130, 0.85) 67.19%, rgba(255, 160, 114, 0.85) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+    white-space: pre-wrap;
+}
+
+.ethernals-h h3 {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+
+    color: #FEE190;
+
+    text-shadow: 0px 1px 13px rgba(255, 127, 9, 0.64);
+}
+
+.eth-vid {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.eth-vid video {
+    width: 100%;
+    height: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+#open-vid {
+    position: absolute;
+    top: 0;
+    transform: scale(1);
+}
+
+.eth-vid div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(180deg, rgba(17, 23, 34, 0.7) 0%, rgba(3, 2, 2, 0.7) 33.15%);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.eth-vid h4 {
+
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    background: linear-gradient(180deg, rgba(255, 250, 202, 0.85) 0%, rgba(255, 243, 137, 0.85) 21.35%, rgba(255, 218, 130, 0.85) 67.19%, rgba(255, 160, 114, 0.85) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.eth-vid h5 {
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 0px 4px #000000;
+}
+
+.eth-vid p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #B1B1B1;
+}
+
+.eth-vid div span {
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(255, 250, 202, 0.85) 0%, rgba(255, 243, 137, 0.85) 21.35%, rgba(255, 218, 130, 0.85) 67.19%, rgba(255, 160, 114, 0.85) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 1rem;
+}
+
+#ethernal-opening-result {
+    width: 100%;
+}
+
+#ethernal-opening-result > div {
+    margin-left: auto;
+    margin-right: auto;
+}

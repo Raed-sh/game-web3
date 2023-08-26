@@ -1,0 +1,963 @@
+.fb-header {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 100px;
+    left: 65px;
+}
+
+.switch {
+    width: 460px;
+    display: flex;
+    align-items: center;
+    /* padding: 2em 0; */
+    position: relative;
+    margin: 0 auto;
+}
+
+.switch button {
+    width: 50%;
+    height: 51.77px;
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid #676767;
+    font-family: 'Trajan Pro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #FEE190;
+}
+
+.switch .act {
+    background: linear-gradient(180deg, #020202 0%, #222531 100%);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.switch img {
+    position: absolute;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    animation: img-rotaion 300ms ease-in-out;
+    height: 36px;
+    width: 36px;
+}
+
+@keyframes img-rotaion {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.currency-select button {
+    width: 200px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+    background: linear-gradient(270deg, #020202 0%, rgba(34, 37, 49, 0) 68.66%);
+    filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.5));
+    border: 1px solid;
+    border-image: linear-gradient(89.88deg, rgba(255, 255, 255, 0) 54.15%, #B79C73 105.29%) 1/1;
+}
+
+.currency-select button h4 {
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    text-align: center;
+    color: #FEE190;
+}
+
+.currency-select button h4 span {
+    font-size: 10px;
+    color: rgba(254, 225, 144, 0.85);
+}
+
+/* .currency-select button:hover{
+    border: 1px solid #FEE190;
+} */
+
+/* Index.tsx */
+
+.cards {
+    /* width: 419.56px; */
+    width: 400px;
+    /* height: 608px; */
+    height: 540px;
+    gap: 31px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% auto;
+}
+
+.cards .card-cont {
+    width: 400px;
+    height: 600px;
+    margin: 0.5rem auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .25s ease;
+    cursor: pointer;
+}
+
+.card-box {
+    height: 417px;
+    width: 320px;
+}
+
+.card-cont h3 {
+    font-family: 'Trajan Pro';
+    font-size: 20px;
+    text-align: center;
+    font-variant: small-caps;
+    background: linear-gradient(180deg, #F6EAC4 23.96%, #FFFFFF 38.02%, #FFFFFF 47.4%, #CCB18C 94.27%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    padding: 3.8rem 0;
+}
+
+.card-cont h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    background: linear-gradient(262.44deg, #FFCFB5 62.89%, #976360 77.06%, #6D4036 96.93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+}
+
+.card-cont h4 {
+    font-family: 'Medusa Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    background: linear-gradient(180deg, #F6EAC4 23.96%, #FFFFFF 38.02%, #FFFFFF 47.4%, #CCB18C 94.27%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+}
+
+.card-cont .det-btn-wrap {
+    position: absolute;
+    left: 52%;
+    transform: translateX(-50%);
+    bottom: 5rem;
+}
+
+.card-cont .det-btn {
+    width: 200px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+}
+
+.card-cont .det-btn div {
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+}
+
+.card-cont .det-btn span {
+    position: relative;
+    font-size: 18px;
+    font-family: 'Trajan Pro';
+    font-weight: 700;
+    color: #EDDBAC;
+}
+
+.details-wrapper {
+    padding-top: 250px;
+}
+
+.details-wrapper .cards {
+    width: 320px;
+    background-size: 0;
+}
+
+.benefits-header {
+    width: 950px;
+    height: 200px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefits-header section {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.benefits-header section h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Trajan Pro';
+    font-weight: 700;
+    font-size: 18px;
+    /* identical to box height, or 117% */
+    font-variant: small-caps;
+    background: linear-gradient(180deg, #F6EAC4 23.96%, #FFFFFF 38.02%, #FFFFFF 47.4%, #CCB18C 94.27%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.benefits-header section h3 span {
+    font-size: 42px;
+    background: linear-gradient(180deg, rgba(255, 250, 202, 0.85) 0%, rgba(255, 243, 137, 0.85) 21.35%, rgba(255, 218, 130, 0.85) 67.19%, rgba(255, 160, 114, 0.85) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.benefits-header section label {
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    font-variant: small-caps;
+    background: linear-gradient(180deg, #F6EAC4 23.96%, #FFFFFF 38.02%, #FFFFFF 47.4%, #CCB18C 94.27%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.benefits-header section label div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 1rem 0;
+}
+
+.benefits-header label div img {
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.benefits-header label div img:hover {
+    opacity: 1;
+}
+
+.benefits-slider {
+    height: 400px;
+    width: 950px;
+}
+
+.disclaimer-text {
+    margin-top: 0px;
+}
+
+/* FOUNDER CARD */
+.fb-card-wrapper {
+    width: 160px;
+    height: 260px;
+    position: relative;
+    cursor: default;
+    z-index: 2;
+    transition: all 300ms ease-in-out;
+}
+
+.num-card {
+    position: absolute;
+    width: 60.95px;
+    height: 61.18px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url('/images/backgrounds/num-card.png');
+    transition: all 500ms ease;
+}
+
+.fb-card-wrapper:hover .num-card {
+    background: url('/images/backgrounds/num-card-hover.png') no-repeat;
+}
+
+
+.num-card h1 {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 21px;
+    color: #B1B1B1;
+    line-height: 50px;
+}
+
+.body-card {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.body-card h4 {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #B1B1B1;
+    transform: translateY(3rem);
+    white-space: pre-wrap;
+}
+
+.last-card {
+    position: absolute;
+    top: 40px;
+    width: 140px;
+    height: 228px;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+.last-card.r {
+    right: 10px;
+}
+
+.last-card.l {
+    left: 10px;
+}
+
+/* .last-card5:hover {
+    position: relative;
+    width: 160px;
+    height: 260px;
+    right: 0;
+    top: 0;
+    opacity: 1;
+} */
+
+
+
+
+.card-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 500ms ease;
+}
+
+.carousel-cont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 1rem 0;
+    position: relative;
+    transition: all 500ms ease;
+}
+
+
+
+.controls-carousel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.controls-carousel img {
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.controls-carousel img:hover {
+    opacity: 1;
+}
+
+.controls-carousel img:nth-child(1) {
+    transform: rotateZ(180deg);
+}
+
+.controls-carousel h3 {
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    font-variant: small-caps;
+
+    background: linear-gradient(180deg, #F6EAC4 23.96%, #FFFFFF 38.02%, #FFFFFF 47.4%, #CCB18C 94.27%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ----------------- */
+.founder-payments {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------------- */
+
+.success-box {
+    width: 720px;
+    height: 620px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.success-box h1 {
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 29px;
+
+    /* identical to box height */
+    text-align: center;
+
+    color: #EDDBAC;
+}
+
+.success-box h1 span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    /* identical to box height */
+    text-align: center;
+
+    color: #EDDBAC;
+}
+
+.success-box h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #BAB3BB;
+}
+
+.success-box p {
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 29px;
+
+    /* identical to box height */
+    text-align: center;
+
+    color: #EDDBAC;
+}
+
+.success-box section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+    gap: 50px;
+}
+
+.success-box section .border {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background: url(/images/layout/border.png);
+}
+
+.success-box section h2 {
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    /* identical to box height */
+    text-align: center;
+
+    color: #EDDBAC;
+}
+
+
+
+/* Progress */
+
+.progress {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressBar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    clip: rect(0, 60px, 120px, 0);
+    position: absolute;
+}
+
+.progressFill {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    clip: rect(0, 60px, 120px, 0);
+    position: absolute;
+    border-top: 1px solid #FFEA9E;
+    transform-origin: center center;
+
+    /* border: 2px solid; */
+
+    /* border-image-source: conic-gradient(from 180deg at 50% 50%, rgba(255, 255, 255, 0) -77.59deg, rgba(255, 255, 255, 0) 9.85deg, # 80.12deg, #986530 136.88deg, #DCCBB9 282.37deg, rgba(255, 255, 255, 0) 282.41deg, rgba(255, 255, 255, 0) 369.85deg); */
+
+
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* -------- purchase stages */
+#fp-stage-bg {
+    height: 620px;
+    width: 720px;
+}
+
+#fp-purchase-process {
+    /* height: 620px; */
+    width: 720px;
+}
+
+#fp-purchase-process>div,
+#fp-stage-error {
+    height: 620px;
+    width: 720px;
+    position: relative;
+}
+
+#fp-purchase-spinner {
+    position: relative;
+    top: -330px;
+    width: 100%;
+    height: 116px;
+    width: 116px;
+    left: 43%;
+}
+
+#fp-spinner-outer {
+    animation: img-rotaion 1500ms linear infinite;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+#fp-spinner-inner {
+    position: relative;
+    top: -78px;
+    left: 35px;
+}
+
+#transaction-error {
+    width: 100%;
+    position: relative;
+    top: -460px;
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+
+    text-align: center;
+
+    color: #6B6B6B;
+}
+
+#fp-error-text,
+#fp-error-subtext {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -420px;
+}
+
+#fp-error-text {
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+
+    text-align: center;
+
+    color: #6B6B6B;
+}
+
+#fp-error-subtext {
+    top: -390px !important;
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    text-align: center;
+
+    color: #EDDBAC;
+}
+
+#fp-error-img {
+    height: 116px;
+    width: 116px;
+    position: relative;
+    left: 42%;
+    top: -450px;
+}
+
+.fp-progress-button {
+    position: relative;
+    width: 220px;
+    height: 83px;
+    cursor: pointer;
+}
+
+.fp-progress-button img,
+.fp-progress-button h3 {
+    position: relative;
+}
+
+.fp-progress-button h3 {
+    top: -64px;
+    width: inherit;
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    text-align: center;
+
+    color: #EDDBAC;
+
+    text-shadow: 0px 0px 4px #000000;
+}
+
+#fp-error-btn {
+    position: relative;
+    top: -370px;
+    left: 35%;
+    height: 0px;
+}
+
+#fp-success-content {
+    height: 0px;
+    width: 100%;
+    position: relative;
+    top: -520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#fp-success-title {
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    text-align: center;
+
+    color: rgba(237, 219, 172, 0.85);
+    margin-bottom: 69px;
+}
+
+#fp-success-subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #EDDBAC;
+    margin-bottom: 28px;
+}
+
+#fp-success-text {
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    color: rgba(237, 219, 172, 0.85);
+    margin-bottom: 19.59px;
+}
+
+#fp-success-checkmark {
+    margin-bottom: 38px;
+}
+
+#fp-success-btn h3 {
+    font-size: 17px;
+}
+
+#transfer {
+    position: relative;
+    top: -500px;
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    /* identical to box height */
+    text-align: center;
+
+    color: #EDDBAC;
+}
+
+
+#transaction-process {
+    position: relative;
+    top: -400px;
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    /* identical to box height */
+    text-align: center;
+
+    color: #EDDBAC;
+}
+
+/* --------- UPDATED SINGLE FP PAGE ------- */
+.details-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    /* margin: 0 auto; */
+    height: 620px;
+    align-items: center;
+    gap: 100px;
+    position: relative;
+}
+
+#fp-main-container {
+    width: 950px;
+    height: 200px;
+    padding-left: 260px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#fp-info-container h2 {
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    text-align: center;
+
+    color: #D9D9D9;
+
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+#fp-info-container p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #D9D9D9;
+    margin: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#fp-info-container h5 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #D9D9D9;
+    margin: 0;
+    max-width: 320px;
+}
+
+#fp-info-container h3 {
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 21px;
+
+    text-align: center;
+    font-variant: small-caps;
+
+    color: #EDDBAC;
+
+    /* this is so the coin stays near the text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fp-info-container h3 span:first-child {
+    margin-right: 6px;
+}
+
+#fp-purchase-container {
+    width: 203px;
+    height: 139px;
+}
+
+#pack-qty-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#pack-qty-label h2 {
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #EDDBAC;
+
+    text-shadow: 0px 0px 4px #000000;
+    padding-right: 1rem;
+}
+
+#pack-qty-label div {
+    display: flex;
+    flex-direction: row;
+}
+
+#purchase-button {
+    margin-top: 2rem;
+}
+
+.fp-buy-btn {
+    cursor: pointer;
+    width: 200px;
+    height: 56.14px;
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 56px;
+
+    text-align: center;
+    color: #EDDBAC;
+}
+
+.benefit-card-soulbound {
+    position: relative;
+    top: 100px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default !important;
+}
+
+.benefit-card-soulbound img {
+    cursor: default;
+}
+
+.benefit-card-soulbound #soulbound-explanation {
+    display: none;
+}
+
+#switcher-coming-soon {
+    position: absolute;
+    left: 4.6rem;
+    top: 96px;
+}
+
+#switcher-coming-soon p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #D9D9D9;
+}
+
+
+.switcher-tradeable-inactive {
+    color: #525252 !important;
+    cursor: not-allowed;
+}
+
+.currency-switch-container div.CurrencySwitch {
+    position: relative;
+}

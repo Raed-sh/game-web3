@@ -1,0 +1,61 @@
+#left-menu {
+    background-image: url("../../public/images/navmenu/navigation-menu-bg.webp");
+    height: 100vh;
+    /* height: 100%;
+    width: 230px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 50;
+    padding-top: 200px; */
+}
+
+.left-menu-tab {
+    cursor: pointer;
+    height: 100px;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    user-select: none;
+}
+
+.left-menu-tab-active {
+    cursor: default;
+}
+
+.left-menu-tab-redirectable {
+    cursor: pointer !important;
+}
+
+.left-menu-tab-active p {
+    color: #EDDBAC !important;
+}
+
+.left-menu-tab p {
+    position: relative;
+    left: 45%;
+    top: 22px;
+    max-width: 110px;
+    height: 100px;
+    line-height: 30px;
+
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #8A8A8A;
+}
+
+#left-tab-adventurers p {
+    left: 48%;
+    top: 30px;
+}
+
+#left-tab-premium-packs p {
+    width: 90px;
+}

@@ -1,0 +1,263 @@
+.web3-payment-modal {
+    width: 720px;
+    height: 620px;
+    background-image: url(/images/backgrounds/town.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* temporary i think */
+    position: relative;
+}
+
+.web3-payment-modal section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+}
+
+.web3-payment-modal div button {
+    /* width: 230px; */
+    width: 200px;
+    height: 52px;
+    border-radius: 4px;
+    border: 1px solid #B79C73;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+    background: #020202;
+    cursor: pointer;
+    font-family: 'Trajan Pro';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #BAB3BB;
+    text-shadow: 0px 0px 4px #000000;
+    margin-right: 1.8rem;
+}
+
+.web3-payment-modal div button:hover {
+    background: linear-gradient(180deg, #020202 0%, #222531 100%);
+}
+
+.web3-payment-success {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+}
+
+.crypto-selection {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    text-shadow: 0px 1px 13px rgba(255, 127, 9, 0.64);
+    font-size: larger;
+}
+
+.crypto-selection div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-width: 2px;
+    border-color: #222531;
+    color: #fee190;
+}
+
+.main-modal {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-modal a:hover {
+    background-color: #020c2a;
+    cursor: pointer;
+}
+
+.selectCrypto:hover {
+    cursor: pointer;
+    background-color: #010717;
+}
+
+.conversions {
+    height: 50%;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conversions p {
+    padding-top: 10px;
+}
+
+.weight {
+    font-weight: 700;
+}
+
+.shadow {
+    text-shadow: 0px 1px 13px rgba(255, 127, 9, 0.64);
+}
+
+.color {
+    color: #fee190;
+}
+
+.gray {
+    color: #BAB3BB
+}
+
+.dropdown {
+    height: 180px;
+    width: 50%;
+    background-color: #010717;
+    border: 1px solid #222531;
+    padding: 1rem;
+    overflow: hidden;
+    align-self: flex-end;
+    position: absolute;
+}
+
+.menu-item {
+    height: 50px;
+    display: flex;
+    border-radius: 8px;
+    transition: background 500ms;
+    padding: 0.5rem;
+}
+
+.big {
+    font-size: x-large;
+}
+
+.arrow {
+    transform: rotate(-90deg);
+}
+
+.loading-modal {
+    padding-top: 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.transaction-processing-div {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: #D9D9D9;
+    border-bottom-width: 1px;
+    margin-bottom: -20px;
+}
+
+.buy-currencies-img {
+    align-self: flex-end;
+}
+
+.processing-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.processing-logo img {
+    position: absolute;
+}
+
+.processing-logo img:nth-child(2) {
+    animation: spin 5s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.playfair {
+    font-family: "Playfair Display";
+}
+
+.success-modal {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.new-balance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: #D9D9D9;
+    border-bottom-width: 1px;
+}
+
+.success-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.success-button {
+    width: 100px !important;
+    height: 40px !important;
+    margin: 0 auto !important;
+    margin-top: 10px !important;
+}
+
+.error {
+    margin-top: 10px;
+}
+
+.connectButtons {
+    padding-top: 80px;
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+}
+
+.buttons p {
+    padding-bottom: 10px;
+}
+
+.buttonsContainer {
+    display: flex;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.buttons {
+    padding-top: 100px;
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+}
+
+.buttons1 {
+    padding-top: 100px;
+    padding-left: 20px;
+    width: 60%;
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+}
+
+.buttons1 p {
+    font-size: 18px;
+}

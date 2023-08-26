@@ -1,0 +1,33 @@
+/* .collected-select-viewtype-disabled, .collected-select-viewtype-disabled * {
+    cursor: not-allowed !important;
+} */
+
+#collected-select-viewtype {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 40px !important;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.collected-selector {
+    cursor: pointer;
+}
+
+.collected-selector span {
+    font-family: 'Trajan Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    position: relative;
+    color: #656464;
+    top: -48px;
+    left: 50px;
+}
+
+.collected-selector-selected span {
+    color: #FEE190;
+}

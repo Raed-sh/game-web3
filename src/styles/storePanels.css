@@ -1,0 +1,39 @@
+#store-panels-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 40px;
+  margin-top: 10rem;
+}
+
+.store-panel {
+  width: 220px;
+  height: 480px;
+  position: relative;
+  top: 40px;
+}
+
+.store-panel-text {
+  position: relative;
+  top: -100px;
+  width: 100%;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.store-panel-text h3 {
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  color: #eddbac;
+
+  /* max-width: 80px; */
+  min-height: 45px;
+  word-spacing: 220px;
+}

@@ -1,0 +1,10 @@
+#asset-switch {
+    position: fixed;
+    top: 0;
+    left: 44%;
+    z-index: 111;
+}
+
+.switcher:hover {
+    cursor: pointer;
+}

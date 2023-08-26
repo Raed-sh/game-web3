@@ -1,0 +1,506 @@
+.adventurerMain {
+    display: flex;
+    padding-left: 3em;
+}
+
+.adventurerMain * {
+    animation: 300ms ease-in-out;
+}
+
+#purchase-in-progress-adventurer {
+    position: relative;
+    top: 18px;
+    font-family: "Trajan Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #fbc974;
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
+    animation: ease-in-out 100ms;
+}
+/* SUCCESS */
+
+.successMain {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.adventurerSuccessPhoto {
+    z-index: 1;
+    position: relative;
+}
+
+.adventurerPhoto {
+    max-width: 40%;
+    height: 654.45px;
+    width: 654.45px;
+}
+
+.successDisplayContainer {
+    background-color: rgba(0, 0, 0, 0.3);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 720px;
+    height: 620px;
+    padding: 2em 0;
+    gap: 10px;
+    position: relative;
+}
+
+
+.successDisplayContainer h2 {
+    font-family: "Playfair Display";
+    font-size: x-large;
+    color: #fee190;
+    margin-bottom: 10px;
+}
+
+.successDisplayContainer .coin{
+    position: absolute;
+    right: 5%;
+}
+.adventurerCard {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.adventurerBanner {
+    width: 450px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -150px;
+    position: relative;
+    z-index: 0;
+    margin-left: 40px;
+    display: flex;
+    padding-top: 15px;
+}
+
+.adventurerBanner img {
+    width: 70px;
+}
+
+.adventurerBanner div {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-family: "Trajan Pro";
+    font-size: x-large;
+}
+
+.adventurerBanner h2 {
+    font-family: "Trajan Pro";
+    font-size: medium;
+    color: #fee190;
+
+}
+
+
+.adventurerSelectorContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    gap: 20px;
+    left: 0;
+    bottom: 10%;
+    padding-left: 1em;
+}
+
+.adventurerSelectorContainer div {
+    width: 120px;
+    height: 80px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.adventurerSelectorContainer div:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.adventurerSelectorContainer h4{
+    font-family: 'Trajan Pro';
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    font-variant: small-caps;
+    color: #FFFFFF;
+    visibility: hidden;
+}
+
+.adventurerSelectorContainer div:hover h4{
+    visibility: visible;
+    opacity: 0.5;
+}
+
+.adventurerInfoContainer { 
+   background-color: rgba(0, 0, 0, 0.3);
+    width: 720px;
+    height: 420px;
+    padding: 2em 4em;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.adventurerInfo h2 {
+    font-family: 'Trajan Pro';
+    font-weight: 700;
+    font-size: 24px;
+    font-variant: small-caps;
+    color: #D9D9D9;
+}
+
+.adventurerInfo h3 {
+    font-family: 'Trajan Pro';
+    font-weight: 400;
+    font-size: 16px;
+    color: #EDDBAC;
+}
+
+.adventurerInfo p {
+    font-family: "Roboto";
+    color: #D9D9D9;
+    line-height: 25px;
+}
+
+.loreButtonContainer img {
+    width: 70px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.loreButtonContainer img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.buyButtonContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy-button {
+    font-family: "Trajan Pro";
+    color: #fee190;
+    font-size: x-large;
+    width: 202px;
+    height: 55px;
+}
+
+.back-button {
+    font-family: "Trajan Pro";
+    color: #fee190;
+    font-size: large;
+    width: 120px;
+    height: 50px;
+}
+
+.adventurerPrice {
+    display: flex;
+    align-items: center;
+}
+
+.adventurerPrice img {
+    width: 50px;
+    height: 50px;
+}
+
+.adventurerPrice p:first-of-type {
+    font-family: 'Trajan Pro';
+    font-size: 42px;
+    font-variant: small-caps;
+    background: linear-gradient(180deg, rgba(255, 250, 202, 0.85) 0%, rgba(255, 243, 137, 0.85) 21.35%, rgba(255, 218, 130, 0.85) 67.19%, rgba(255, 160, 114, 0.85) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+}
+
+.adventurerPrice p:last-of-type {
+    font-family: "Trajan Pro";
+    color: #fee190;
+    font-size: medium;
+    margin-top: 15px;
+}
+
+.strong {
+    font-weight: bold;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #D9D9D9;
+}
+
+.light {
+    color: rgb(181, 181, 181);
+    font-weight: 100;
+}
+
+.assetTypeSelectorContainer {
+    position: relative;
+    display: flex;
+    text-align: center;
+}
+
+.error {
+    color: red !important;
+    font-size: x-large;
+}
+
+.error p {
+    color: red !important;
+}
+.error a{
+    border-bottom: 1px solid;
+}
+
+
+.starterBtn {
+    background-image: url('../../public/images/adventurers/element\ buttons/not\ active/starter-na.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: brightness(0.5);
+}
+
+.starterBtn.active {
+    background-image: url('../../public/images/adventurers/element\ buttons/active/starter-active.webp');
+    filter: brightness(1);
+}
+
+.chaosBtn {
+    background-image: url('../../public/images/adventurers/element\ buttons/not\ active/chaos-na.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: brightness(0.5);
+}
+
+.chaosBtn.active {
+    background-image: url('../../public/images/adventurers/element\ buttons/active/chaos-active.webp');
+    filter: brightness(1);
+}
+
+.iceBtn {
+    background-image: url('../../public/images/adventurers/element\ buttons/not\ active/ice-na.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: brightness(0.5);
+}
+
+.iceBtn.active {
+    background-image: url('../../public/images/adventurers/element\ buttons/active/ice-active.webp');
+    filter: brightness(1);
+
+}
+
+.earthBtn {
+    background-image: url('../../public/images/adventurers/element\ buttons/not\ active/earth-na.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: brightness(0.5);
+}
+
+.earthBtn.active {
+    background-image: url('../../public/images/adventurers/element\ buttons/active/earth-active.webp');
+    filter: brightness(1);
+
+}
+
+.fireBtn {
+    background-image: url('../../public/images/adventurers/element\ buttons/not\ active/fire-na.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: brightness(0.5);
+}
+
+.fireBtn.active {
+    background-image: url('../../public/images/adventurers/element\ buttons/active/fire-active.webp');
+    filter: brightness(1);
+
+}
+
+.thunderBtn {
+    background-image: url('../../public/images/adventurers/element\ buttons/not\ active/thunder-na.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: brightness(0.5);
+}
+
+.thunderBtn.active {
+    background-image: url('../../public/images/adventurers/element\ buttons/active/thunder-active.webp');
+    filter: brightness(1);
+
+}
+
+.airBtn {
+    background-image: url('../../public/images/adventurers/element\ buttons/not\ active/air-na.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: brightness(0.5);
+}
+
+.airBtn.active {
+    background-image: url('../../public/images/adventurers/element\ buttons/active/air-active.webp');
+    filter: brightness(1);
+
+}
+
+.lightBtn {
+    background-image: url('../../public/images/adventurers/element\ buttons/not\ active/light-na.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: brightness(0.5);
+}
+
+.lightBtn.active {
+    background-image: url('../../public/images/adventurers/element\ buttons/active/light-active.webp');
+    filter: brightness(1);
+
+}
+
+.natureBtn {
+    background-image: url('../../public/images/adventurers/element\ buttons/not\ active/nature-na.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: brightness(0.5);
+}
+
+.natureBtn.active {
+    background-image: url('../../public/images/adventurers/element\ buttons/active/nature-active.webp');
+    filter: brightness(1);
+
+}
+
+.waterBtn {
+    background-image: url('../../public/images/adventurers/element\ buttons/not\ active/water-na.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: brightness(0.5);
+}
+
+.waterBtn.active {
+    background-image: url('../../public/images/adventurers/element\ buttons/active/water-active.webp');
+    filter: brightness(1);
+    
+}
+
+/* ADVENTURERS COLLECTION */
+
+.adventurer-container {
+    padding-top: 5px;
+    width: 600px;
+    height: 350px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.adventurer-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.adventurer-card {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+
+.adventurer-info {
+    position: relative;
+    z-index: 1;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.adventurer-info h2 {
+    margin-top: 30px;
+    font-family: "Trajan Pro";
+    font-size: x-large;
+    color: #D9D9D9;
+}
+
+
+
+.adventurer-info-text {
+    display: flex;
+    flex-direction: column;
+    color: #D9D9D9;
+}
+
+.adventurer-info-text span {
+    color: #D9D9D9 !important;
+    max-width: 90%;
+}
+
+.adventurer-counter {
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: "Trajan Pro";
+    color: #fee190;
+    padding-left: 7px;
+}
+
+/* .cards-collection {
+    display: flex;
+    justify-content: center;
+} */
+
+.no-adventurer {
+    font-family: "Trajan Pro";
+    color: #fee190;
+    font-size: large;
+}
+
+.yellow {
+    font-family: "Trajan Pro";
+    color: #fee190;
+}
+
+.small {
+    font-size: small;
+}
+
+p.grey {
+    font-weight: 300;
+    max-width: 90%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #D9D9D9;
+}
+
+.adventurerTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rarity {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.processing-logo {
+    width: 100%;
+    height: 100%;
+}

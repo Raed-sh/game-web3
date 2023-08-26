@@ -1,0 +1,286 @@
+#collection-no-cards {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 21px;
+  background: linear-gradient(180deg, #f6eac4 23.96%, #ffffff 38.02%, #ffffff 47.4%, #ccb18c 94.27%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cards-collection {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  row-gap: 1rem;
+  column-gap: 10px;
+  width: 700px;
+  height: 608px;
+  min-height: 608px;
+  align-items: flex-start !important;
+  overflow-x: hidden;
+  position: relative;
+  /* left: -45px; */
+}
+
+/* PACK OPENING STUFF */
+#result-cards-scrollbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 1220px;
+  overflow-x: auto;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  height: 320px !important;
+  overflow-y: hidden;
+}
+
+.result-cards-centered {
+  justify-content: center;
+}
+
+.collection-label {
+  cursor: pointer;
+  -webkit-filter: brightness(0.6);
+  filter: brightness(0.6);
+}
+
+.collection-label-active {
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+/* COLLECTION SWITCH BUTTON */
+#collection-switch {
+  display: flex;
+  padding-left: 500px;
+  /* height: 52px !important; */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.collection-switch-box {
+  margin: 0 !important;
+  cursor: pointer;
+}
+
+.collection-switch-box span {
+  position: relative;
+  top: -35px;
+  text-align: center;
+  width: 100%;
+
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  /* identical to box height */
+  text-align: center;
+
+  color: rgba(101, 100, 100, 0.85);
+}
+
+#collection-switch-unpacking span {
+  left: 80px;
+}
+
+#collection-switch-collected span {
+  left: 85px;
+}
+
+.collection-switch-box-active span {
+  cursor: default;
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  /* identical to box height */
+  text-align: center;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 250, 202, 0.85) 0%,
+    rgba(255, 243, 137, 0.85) 21.35%,
+    rgba(255, 218, 130, 0.85) 67.19%,
+    rgba(255, 160, 114, 0.85) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+#collection-switch-button {
+  position: relative;
+  left: -254px;
+  top: 3px;
+  height: 55px;
+  width: 55px;
+  cursor: pointer;
+}
+
+/* COLLECTION MENU */
+#collected-list {
+  margin-right: 160px;
+}
+
+.left-banner-collected h2 {
+  position: relative;
+  top: -40px;
+  width: 230px !important;
+}
+
+#collected-list-items > div:not(.collected-list-item-disabled) h2 {
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  font-variant: small-caps;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 250, 202, 0.85) 0%,
+    rgba(255, 243, 137, 0.85) 21.35%,
+    rgba(255, 218, 130, 0.85) 67.19%,
+    rgba(255, 160, 114, 0.85) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.left-banner-collected .collected-list-item-disabled h2 {
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #8a8a8a !important;
+}
+
+.collected-list-item {
+  cursor: pointer;
+}
+
+.collected-list-item-disabled {
+  cursor: not-allowed;
+}
+
+/* COLLECTION BOX */
+#collected-wrapper {
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  position: relative;
+  top: -40px;
+}
+
+#collected-display {
+  width: 608px;
+}
+
+/* COLLECTION FILTERS */
+#collection-filters {
+  user-select: none;
+  margin-left: 135px;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 100%;
+  justify-content: center;
+}
+
+.collection-filters-entry {
+  height: 57px !important;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.collection-filters-entry h2 {
+  position: relative;
+  top: -38px;
+
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+
+  color: rgba(101, 100, 100, 0.85);
+  width: 80%;
+  margin-left: 65px;
+}
+
+.collection-filters-entry-active h2 {
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 250, 202, 0.85) 0%,
+    rgba(255, 243, 137, 0.85) 21.35%,
+    rgba(255, 218, 130, 0.85) 67.19%,
+    rgba(255, 160, 114, 0.85) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.collection-pack-bordered {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.collection-pack-availability {
+  width: 200px;
+  height: 50px;
+}
+
+.collection-pack-availability section {
+  width: 200px;
+  position: relative;
+  top: -34px;
+  left: -20px;
+  white-space: nowrap;
+}
+
+.collection-pack-availability h5 {
+  width: 200px !important;
+  position: relative;
+  top: -50px;
+}
+
+.nft-icon {
+  position: absolute;
+  top: .8rem;
+  left: 134px;
+  z-index: 3;
+}

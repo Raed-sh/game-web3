@@ -1,0 +1,362 @@
+.booster-h {
+  width: 1521px;
+  max-width: 90%;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+}
+
+.booster-h h3 {
+  display: flex;
+  align-items: center;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 32px;
+  color: #fee190;
+  text-shadow: 0px 1px 13px rgba(255, 127, 9, 0.64);
+}
+
+.booster-h h3 span {
+  margin-left: 2rem;
+}
+
+.booster-h h3 span:nth-child(3) {
+  display: block;
+  color: #b1b1b1;
+}
+
+.booster-h h3 img {
+  position: absolute;
+}
+::-webkit-scrollbar {
+  height: 12px;
+  width: 5px;
+  background: rgba(217, 217, 217, 0.07);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fbc974;
+  -webkit-border-radius: 1ex;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(217, 217, 217, 0.07);
+}
+
+#purchase-in-progress {
+  position: relative;
+  left: 1rem;
+  top: -24px;
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #fbc974;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
+  animation: ease-in-out 100ms;
+}
+
+/* BOOSTER CARD */
+
+.bp-container {
+  width: 80%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 25px;
+}
+
+.booster_card_p {
+  width: 220px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.booster_card_p section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 1em;
+}
+
+.booster_card_p section h3 {
+  font-family: "Trajan Pro";
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  font-variant: small-caps;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 250, 202, 0.85) 0%,
+    rgba(255, 243, 137, 0.85) 21.35%,
+    rgba(255, 218, 130, 0.85) 67.19%,
+    rgba(255, 160, 114, 0.85) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.booster_card_p section h3 span {
+  font-weight: 400;
+  font-size: 16px;
+  color: #eddbac;
+}
+
+.booster_card_p section h4 {
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+
+  /* identical to box height */
+  text-align: center;
+
+  color: rgba(254, 225, 144, 0.85);
+}
+
+.booster_card_p section .button-title {
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  font-variant: small-caps;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 250, 202, 0.85) 0%,
+    rgba(255, 243, 137, 0.85) 21.35%,
+    rgba(255, 218, 130, 0.85) 67.19%,
+    rgba(255, 160, 114, 0.85) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* --------------------- */
+
+.booster-card {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 720px;
+  max-width: 90%;
+  height: 620px !important;
+  max-height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#booster-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 100px;
+  height: 800px;
+  min-width: 700px;
+  position: relative;
+  margin-bottom: -100px;
+}
+
+.counter-style {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
+.counter-style span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  font-variant: small-caps;
+  color: #eddbac;
+}
+
+.counter-style span span {
+  font-size: 14px;
+}
+
+.counter-style section {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.counter-style section span {
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #eddbac;
+  text-shadow: 0px 0px 4px #000000;
+}
+.counter-style section img {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.counter-style section img:hover {
+  opacity: 1;
+}
+
+.pack-info {
+  text-align: center;
+}
+.pack-info h3 {
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #eddbac;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.pack-info h4 {
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #eddbac;
+}
+
+.pack-info p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #bab3bb;
+}
+.not-enough {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.not-enough button img {
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+
+.not-enough button {
+  width: 358px;
+  background-color: transparent;
+  border: none;
+  font-family: "Medusa Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 250, 202, 0.85) 0%,
+    rgba(255, 243, 137, 0.85) 21.35%,
+    rgba(255, 218, 130, 0.85) 67.19%,
+    rgba(255, 160, 114, 0.85) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.bp-purchase-success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 10px;
+}
+
+.bp-purchase-success span {
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #eddbac;
+  text-shadow: 0px 0px 4px #000000;
+}
+.bp-purchase-success h3 {
+  font-family: "Trajan Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+
+  text-align: center;
+
+  color: #eddbac;
+
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+#booster-opening-card-list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.booster-opening-card, .booster-opening-video {
+  width: 200px !important;
+  height: 300px !important;
+  animation: ease-in-out 300ms linear;
+}
+
+.booster-opening-card {
+  filter: drop-shadow(0px 4px 40px rgba(255, 127, 9, 0.64));
+}
+
+.booster-opening-card-center {
+  width: 200px !important;
+  height: 300px !important;
+}
+
+.booster-opening-card-left, .booster-opening-card-right {
+  width: 230px !important;
+  height: 280px !important;
+}
+
+/* ----------- */
+/* UPDATED UI */
